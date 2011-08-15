@@ -108,12 +108,12 @@ abstract public class AbstractPreTokenizer
 
 	/**	Always Separators replacer pattern. */
 
-	protected static PatternReplacer alwaysSeparatorsReplacer	=
+	protected PatternReplacer alwaysSeparatorsReplacer	=
 		new PatternReplacer( alwaysSeparators , " $1 ");
 
 	/**	Comma separator replacer pattern. */
 
-	protected static PatternReplacer commaSeparatorReplacer	=
+	protected PatternReplacer commaSeparatorReplacer	=
 		new PatternReplacer( commaSeparator , " $1 $2" );
 
 	/**	Create a preTokenizer.
