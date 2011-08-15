@@ -1,0 +1,210 @@
+<project name="morphadorner" default="bin" basedir=".">
+
+	<property name="javalibs" value="lib"/>
+	<property name="gatelibs" value="gatelib"/>
+	<property name="utils" value ="edu/northwestern/at/utils"/>
+	<property name="morphadorner" value ="edu/northwestern/at/morphadorner"/>
+	<property name="morphadornertools" value ="edu/northwestern/at/morphadorner/tools"/>
+       	<property name="build.compiler" value="modern"/>
+	<property name="build.compiler.emacs" value="true"/>
+	<property name="utils" value="edu/northwestern/at/utils"/>
+	<property name="corpuslinguistics" value="edu/northwestern/at/utils/corpuslinguistics"/>
+	<property name="utilscontractionexpander" value="edu/northwestern/at/utils/corpuslinguistics/contractionexpander"/>
+	<property name="utilsinflector" value="edu/northwestern/at/utils/corpuslinguistics/inflector"/>
+	<property name="utilslemmatizer" value="edu/northwestern/at/utils/corpuslinguistics/lemmatizer"/>
+	<property name="utilslexicon" value="edu/northwestern/at/utils/corpuslinguistics/lexicon"/>
+	<property name="utilssentencesplitter" value="edu/northwestern/at/utils/corpuslinguistics/sentencesplitter"/>
+	<property name="utilspartsofspeech" value="edu/northwestern/at/utils/corpuslinguistics/partsofspeech"/>
+	<property name="utilsspellingmapper" value="edu/northwestern/at/utils/corpuslinguistics/spellingmapper"/>
+	<property name="utilsstandardizer" value="edu/northwestern/at/utils/corpuslinguistics/spellingstandardizer"/>
+	<property name="utilssyllablecounter" value="edu/northwestern/at/utils/corpuslinguistics/syllablecounter"/>
+	<property name="utilstokenizer" value="edu/northwestern/at/utils/corpuslinguistics/tokenizer"/>
+	<property name="utilstransmat" value="edu/northwestern/at/utils/corpuslinguistics/postagger/transitionmatrix"/>
+	<property name="namerecognizer" value="edu/northwestern/at/utils/corpuslinguistics/namerecognizer"/>
+	<property name="standardizerserver" value="edu/northwestern/at/morphadorner/servers/standardizerserver"/>
+	<property name="cngram" value="de/spieleck/app/cngram"/>
+	<property name="jettydir" value="jetty"/>
+
+	<path id="classpath">
+		<pathelement path="."/>
+		<pathelement path="bin"/>
+		<pathelement location="${javalibs}/icu4j-charsets_3_6_1.jar"/>
+		<pathelement location="${javalibs}/icu4j_3_6_1.jar"/>
+		<pathelement location="${javalibs}/isorelax.jar"/>
+		<pathelement location="${javalibs}/jaws-bin-1.1.jar"/>
+		<pathelement location="${javalibs}/log4j-1.2.9.jar"/>
+		<pathelement location="${javalibs}/jdom.jar"/>
+		<pathelement location="${javalibs}/junit-4.4.jar"/>
+		<pathelement location="${javalibs}/msv.jar"/>
+		<pathelement location="${javalibs}/servlet-api.jar"/>
+		<pathelement location="${gatelibs}/gate.jar"/>
+ 	</path>
+
+	<target name="clean">
+		<delete dir="bin"/>
+		<delete dir="javadoc"/>
+		<delete file="lib/morphadorner-1.0-springsense-patch.jar"/>
+		<delete dir="${jettydir}/logs"/>
+		<delete dir="${jettydir}/webapps/morphadorner/WEB-INF/lib"/>
+		<delete file="${jettydir}/webapps/morphadorner/WEB-INF/web.xml"/>
+	</target>
+
+	<target name="init">
+		<mkdir dir="bin"/>
+		<mkdir dir="javadoc"/>
+		<mkdir dir="lib"/>
+		<mkdir dir="gatelib"/>
+		<copy todir="bin/${morphadorner}/resources/">
+    			<fileset dir="src/${morphadorner}/resources/"
+    				includes="*.properties,*.txt"/>
+    		</copy>
+		<copy todir="bin/${morphadornertools}/namedentities/resources/">
+    			<fileset dir="src/${morphadornertools}/namedentities/resources/"
+    				includes="*.properties,*.txt"/>
+    		</copy>
+
+		<copy todir="bin/${morphadorner}/">
+    			<fileset dir="src/${morphadorner}/"
+    				includes="morphadornerlog.config"/>
+    		</copy>
+		<copy todir="bin/${namerecognizer}/resources/">
+    			<fileset dir="src/${namerecognizer}/resources/"
+    				includes="*.txt"/>
+    		</copy>
+		<copy todir="bin/${utilscontractionexpander}/resources/">
+    			<fileset dir="src/${utilscontractionexpander}/resources/"
+    				includes="*.txt"/>
+    		</copy>
+		<copy todir="bin/${utilsinflector}/conjugator/resources/">
+    			<fileset dir="src/${utilsinflector}/conjugator/resources/"
+    				includes="*.txt"/>
+    		</copy>
+		<copy todir="bin/${utilsinflector}/pluralizer/resources/">
+    			<fileset dir="src/${utilsinflector}/pluralizer/resources/"
+    				includes="*.txt"/>
+    		</copy>
+		<copy todir="bin/${utilslemmatizer}/resources/">
+    			<fileset dir="src/${utilslemmatizer}/resources/"
+    				includes="*.txt"/>
+    		</copy>
+		<copy todir="bin/${utilslexicon}/resources/">
+    			<fileset dir="src/${utilslexicon}/resources/"
+    				includes="*.*"/>
+    		</copy>
+		<copy todir="bin/${utilspartsofspeech}/resources/">
+    			<fileset dir="src/${utilspartsofspeech}/resources/"
+    				includes="*.properties"/>
+    		</copy>
+		<copy todir="bin/${utilssyllablecounter}/resources/">
+    			<fileset dir="src/${utilssyllablecounter}/resources/"
+    				includes="*.tab"/>
+    		</copy>
+		<copy todir="bin/${utilstransmat}/resources/">
+    			<fileset dir="src/${utilstransmat}/resources/"
+    				includes="*.*"/>
+    		</copy>
+		<copy todir="bin/${utilstokenizer}/resources/">
+    			<fileset dir="src/${utilstokenizer}/resources/"
+    				includes="*.txt"/>
+    		</copy>
+		<copy todir="bin/${utilsstandardizer}/resources/">
+    			<fileset dir="src/${utilsstandardizer}/resources/"
+    				includes="*.*"/>
+    		</copy>
+		<copy todir="bin/${utilsspellingmapper}/resources/">
+    			<fileset dir="src/${utilsspellingmapper}/resources/"
+    				includes="*.*"/>
+    		</copy>
+		<copy todir="bin/${standardizerserver}/resources/">
+    			<fileset dir="src/${standardizerserver}/resources/"
+    				includes="*.properties"/>
+    		</copy>
+		<copy todir="bin/${cngram}/resources/">
+    			<fileset dir="src/${cngram}/resources/"
+    				includes="*.ngp,*.lst"/>
+    		</copy>
+	</target>
+
+        <target name="compile" depends="init">
+                <javac
+                        srcdir="src"
+                        destdir="bin"
+                        classpathref="classpath"
+                        debug="on"
+                        target="1.5"
+                        source="1.5"
+                        deprecation="on">
+                        <compilerarg value="-Xlint:unchecked"/>
+                </javac>
+        </target>
+
+	<target name="bin" depends="compile">
+		<rmic base="bin" stubversion="1.2">
+			<include name="${standardizerserver}/*Impl.class"/>
+		</rmic>
+	</target>
+
+	<target name="jar" depends="bin">
+		<mkdir dir="lib"/>
+		<jar jarfile="lib/morphadorner-1.0-springsense-patch.jar" basedir="bin"
+		/>
+	</target>
+
+	<target name="servlets" depends="jar">
+		<mkdir dir="${jettydir}/logs"/>
+		<mkdir dir="${jettydir}/webapps/morphadorner/WEB-INF/lib"/>
+		<copy todir="${jettydir}/webapps/morphadorner/WEB-INF/lib">
+    			<fileset dir="${javalibs}/"
+    				includes="*.jar"/>
+    		</copy>
+		<delete file="${jettydir}/webapps/morphadorner/WEB-INF/web.xml"/>
+		<copy	file="${jettydir}/webapps/morphadorner/WEB-INF/web-template.xml"
+			tofile="${jettydir}/webapps/morphadorner/WEB-INF/web.xml">
+		</copy>
+		<path id="basedirpath">
+			<pathelement location="${basedir}"/>
+		</path>
+		<pathconvert
+			targetos="unix"
+			property="mybasedir"
+			refid="basedirpath">
+		</pathconvert>
+		<replaceregexp file="${jettydir}/webapps/morphadorner/WEB-INF/web.xml"
+			match="%datadirectory"
+			replace="${mybasedir}/data"
+			byline="true">
+		</replaceregexp>
+	</target>
+
+	<target name="full" depends="clean,jar,servlets"/>
+
+	<target name="doc" depends="init">
+		<javadoc sourcepath="src" destdir="javadoc"
+			packagenames="edu.northwestern.at.*,com.*,de.*,jargs.*,net.*,org.*"
+			windowtitle="MorphAdorner"
+			classpathref="classpath"
+			overview="misc/overview.html"
+			package="true">
+			<doctitle><![CDATA[<h2>Morphological Adorner</h2>]]></doctitle>
+		</javadoc>
+	</target>
+
+	<target name="help">
+		<echo>
+
+
+Targets:
+
+clean: Deletes the bin and javadoc directories.
+init: Makes the bin and javadoc directories.
+compile: Compiles all the .java source files to the bin directory.
+bin: Compile.
+jar: Creates morphadorner.jar file of binaries.
+servlets: Creates servlets.
+full: Full build: clean, jar, then servlets.
+doc: javadoc.
+		</echo>
+	</target>
+
+</project>
+

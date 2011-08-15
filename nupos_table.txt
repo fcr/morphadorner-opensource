@@ -1,0 +1,223 @@
+a-acp	 acp word as adverb	 I have not seen him since	 9,500
+av	 adverb	 soon	 37,500
+av-an	 noun-adverb as adverb	 go home	 750
+av-c	 comparative adverb	 sooner, rather	 500
+avc-jn	 comparative adj/noun as adverb	 deeper	 8
+av-d	 determiner/adverb as adverb	 more slowly	 2,000
+av-dc	 comparative determiner/adverb as adverb	 can lesser hide his love	 1,900
+av-ds	 superlative determiner as adverb	 most often	 900
+av-dx	 negative determiner as adverb	 no more	 600
+av-j	 adjective as adverb	 quickly	 15,500
+av-jc	 comparative adjective as adverb	 he fared worse	 850
+av-jn	 adj/noun as adverb	 duly, right honourable	 1,100
+av-js	 superlative adjective as adverb	 in you it best lies	 150
+av-n1	 noun as adverb	 had been cannibally given	 2
+av-s	 superlative adverb	 soonest	 14
+avs-jn	 superlative adj/noun as adverb	 hee being the worthylest constant	 0
+av-vvg	 present participle as adverb	 lovingly	 250
+av-vvn	 past participle as adverb	 Stands Macbeth thus amazedly	 85
+av-x	 negative adverb	 never	 1,300
+c-acp	 acp word as conjunction	 since I last saw him	 14,000
+cc	 coordinating conjunction	 and, or	 42,500
+cc-acp	 acp word as coordinating conjunction	 but	 6,500
+c-crq	 wh-word as conjunction	 when she saw	 6,500
+ccx	 negative conjunction	 nor	 1,200
+crd	 numeral	 2, two, ii	 5,700
+cs	 subordinating conjunction	 if	 6,500
+cst	 'that' as conjunction	 I saw that it was hopeless	 14,000
+d	 determiner	 that man, much money	 29,500
+dc	 comparative determiner	 less money	 850
+dg	 determiner in possessive use	 the latter's	 7
+ds	 superlative determiner	 most money	 450
+dt	 article	 a man, the man	 7,000
+dx	 negative determiner as adverb	 no money	 2,500
+fw-fr	 French word	 monsieur	 500
+fw-ge	 German word	 Herr	 15
+fw-gr	 Greek word	 kurios	 15
+fw-it	 Italian word	 signor	 10
+fw-la	 Latin word	 dominus	 400
+fw-mi	 word in unspecified other language	 n/a	 50
+j	 adjective	 beautiful	 49,500
+j-av	 adverb as adjective	 the then king	 1
+jc	 comparative adjective	 handsomer	 1,500
+jc-jn	 comparative adj/noun	 yet she much whiter	 70
+jc-vvg	 present participles as comparative adjective	 for what pleasinger then varietie, or sweeter then flatterie?	 1
+jc-vvn	 past participle as comparative adjective	 shall find curster than she	 1
+j-jn	 adjective-noun	 the sky is blue	 7,000
+jp	 proper adjective	 Athenian philosopher	 800
+js	 superlative adjective	 finest clothes	 1,500
+js-jn	 superlative adj/noun	 reddest hue	 200
+js-vvg	 present participle as superlative adjective	 the lyingest knave in Christendom	 2
+js-vvn	 past participle as superlative adjective	 deformed'st creature	 3
+j-vvg	 present participle as adjective	 loving lord	 2,000
+j-vvn	 past participle as adjective	 changed circumstances	 2,500
+n1	 singular, noun	 child	 14,000
+n1-an	 noun-adverb as singular noun	 my home	 250
+n1-j	 adjective as singular noun	 a good	 4
+n2	 plural noun	 children	 35,000
+n2-acp	 acp word as plural noun	 and many such-like "As'es" of great charge	 1
+n2-an	 noun-adverb as plural noun	 all our yesterdays	 9
+n2-av	 adverb as plural noun	 and are etcecteras no things	 1
+n2-dx	 determiner/adverb negative as plural noun	 yeas and honest kerysey noes	 0
+n2-j	 adjective as plural noun	 give me particulars	 200
+n2-jn	 adj/noun as plural noun	 the subjects of his substitute	 600
+n2-vdg	 present participle as plural noun, 'do'	 doings	 50
+n2-vhg	 present participle as plural noun, 'have'	 my present havings	 1
+n2-vvg	 present participle as plural noun	 the desperate languishings	 200
+n2-vvn	 past participle as plural noun	 there was no necessity of a Letter of Slains for Mutilation	 0
+ng1	 singular possessive, noun	 child's	 2,500
+ng1-an	 noun-adverb in singular possessive use	 Tomorrow's vengeance	 6
+ng1-j	 adjective as possessive noun	 the Eternal's wrath	 1
+ng1-jn	 adj/noun as possessive noun	 our sovereign's fall	 60
+ng1-vvn	 past participle as possessive noun	 the late lamented's house	 0
+ng2	 plural possessive, noun	 children's	 350
+ng2-jn	 adj/noun as plural possessive noun	 mortals' chiefest enemy	 50
+n-jn	 adj/noun as noun	 a deep blue	 2,300
+njp	 proper adjective as noun	 a Roman	 130
+njp2	 proper adjective as plural noun	 The Romans	 1,300
+njpg1	 proper adjective as possessive noun	 The Roman's courage	 8
+njpg2	 proper adjective as plural possessive noun	 The Romans' courage	 20
+np1	 singular, proper noun	 Paul	 27,500
+np2	 plural, proper noun	 The Nevils are thy subjects	 350
+npg1	 singular possessive, proper noun	 Paul's letter	 2,600
+npg2	 plural possessive, proper noun	 will take the Nevils' part	 6
+np-n1	 singular noun as proper noun	 at the Porpentine	 260
+np-n2	 plural noun as proper noun	 such Brooks are welcome to me	 2
+np-ng1	 singular possessive noun as proper noun	 and through Wall's chink	 20
+n-vdg	 present participle as noun, 'do'	 my doing	 20
+n-vhg	 present participle as noun, 'have'	 my having	 0
+n-vvg	 present participle as noun	 the running of the deer	 1,500
+n-vvn	 past participle as noun	 the departed	 50
+ord	 ordinal number	 fourth	 2,500
+p-acp	 acp word as preposition	 to my brother	 57,000
+pc-acp	 acp word as particle	 to do	 19,000
+pi	 singular, indefinite pronoun	 one, something	 2,200
+pi2	 plural, indefinite pronoun	 from wicked ones	 50
+pi2x	 plural, indefinite pronoun	 To hear my nothings monstered	 2
+pig	 singular possessive, indefinite pronoun	 the pairings of one's nail	 35
+pigx	 possessive case, indefinite pronoun	 nobody's	 2
+pix	 indefinite pronoun	 none, nothing	 1,300
+pn22	 2nd person, personal pronoun	 you	 9,000
+pn31	 3rd singular, personal pronoun	 it	 10,500
+png11	 1st singular possessive, personal pronoun	 a book of mine	 220
+png12	 1st plural possessive, personal pronoun	 this land of ours	 35
+png21	 2nd singular possessive, personal pronoun	 this is thine	 3
+png22	 2nd person, possessive, personal pronoun	 this is yours	 100
+png31	 3rd singular possessive, personal pronoun	 a cousin of his	 200
+png32	 3rd plural possessive, personal pronoun	 this is theirs	 30
+pno11	 1st singular objective, personal pronoun	 me	 5,000
+pno12	 1st plural objective, personal pronoun	 us	 1,100
+pno21	 2nd singular objective, personal pronoun	 thee	 1,200
+pno31	 3rd singular objective, personal pronoun	 him, her	 12,000
+pno32	 3rd plural objective, personal pronoun	 them	 4,700
+pns11	 1st singular subjective, personal pronoun	 I	 14,500
+pns12	 1st plural subjective, personal pronoun	 we	 2,200
+pns21	 2nd singular subjective, personal pronoun	 thou	 2,000
+pns31	 3rd singular subjective, personal pronoun	 he, she	 21,000
+pns32	 3rd plural objective, personal pronoun	 they	 5,600
+po11	 1st singular, possessive pronoun	 my	 6,700
+po12	 1st plural, possessive pronoun	 our	 1,400
+po21	 2nd singular, possessive pronoun	 thy	 1,650
+po22	 2nd person possessive pronoun	 your	 3,000
+po31	 3rd singular, possessive pronoun	 its, her, his	 19,000
+po32	 3rd plural, possessive pronoun	 their	 3,800
+pp	 preposition	 in	 23,000
+pp-f	 preposition 'of'	 of	 29,000
+px11	 1st singular reflexive pronoun	 myself	 350
+px12	 1st plural reflexive pronoun	 ourselves	 55
+px21	 2nd singular reflexive pronoun	 thyself, yourself	 250
+px22	 2nd plural reflexive pronoun	 yourselves	 30
+px31	 3rd singular reflexive pronoun	 herself, himself, itself	 1,300
+px32	 3rd plural reflexive pronoun	 themselves	 220
+pxg21	 2nd singular possessive, reflexive pronoun	 yourself's remembrance	 1
+q-crq	 interrogative use, wh-word	 Who? What? How?	 3,000
+r-crq	 relative use, wh-word	 the girl who ran	 10,000
+sy	 alphabetical or other symbol	 A, @	 50
+uh	 interjection	 oh!	 3,000
+uh-av	 adverb as interjection	 Well!	 300
+uh-crq	 wh-word as interjection	 Why, there were but four	 500
+uh-dx	 negative interjection	 No!	 500
+uh-j	 adjective as interjection	 Grumio, mum!	 7
+uh-jn	 adjective/noun as interjection	 And welcome, Somerset	 30
+uh-n	 noun as interjection	 Soldiers, adieu!	 200
+uh-v	 verb as interjection	 My gracious silence, hail	 90
+vb2	 2nd singular present of 'be'	 thou art	 300
+vb2-imp	 2nd plural present imperative, 'be'	 Beth pacient	 10
+vb2x	 2nd singular present, 'be'	 thow nart yit blisful	 2
+vbb	 present tense, 'be'	 are, be	 3,300
+vbbx	 present tense negative, 'be'	 aren't, ain't, beant	 60
+vbd	 past tense, 'be'	 was, were	 14,000
+vbd2	 2nd singular past of 'be'	 thou wast, thou wert	 50
+vbd2x	 2nd singular past, 'be'	 weren't	 0
+vbdp	 plural past tense, 'be'	 whose yuorie shoulders weren couered all	 30
+vbdx	 past tense negative, 'be'	 wasn't, weren't	 75
+vbg	 present participle, 'be'	 being	 1,300
+vbi	 infinitive, 'be'	 be	 5,600
+vbm	 1st singular, 'be'	 am	 1,200
+vbmx	 1st singular negative, 'be'	 I nam nat lief to gabbe	 3
+vbn	 past participle, 'be'	 been	 1,800
+vbp	 plural present, 'be'	 Thise arn the wordes	 260
+vbz	 3rd singular present, 'be'	 is	 6,900
+vbzx	 3rd singular present negative, 'be'	 isn't	 100
+vd2	 2nd singular present of 'do'	 dost	 150
+vd2-imp	 2nd plural present imperative, 'do'	 Dooth digne fruyt of Penitence	 6
+vd2x	 2nd singular present negative, 'do'	 thee dostna know the pints of a woman	 2
+vdb	 present tense, 'do'	 do	 1,600
+vdbx	 present tense negative, 'do'	 don't	 500
+vdd	 past tense, 'do'	 did	 3,100
+vdd2	 2nd singular past of 'do'	 didst	 55
+vdd2x	 2nd singular past negative, verb	 Why, thee thought'st Hetty war a ghost, didstna? 0.20
+vddp	 plural past tense, 'do'	 on Job , whom that we diden wo	 3
+vddx	 past tense negative, 'do'	 didn't	 90
+vdg	 present participle, 'do'	 doing	 110
+vdi	 infinitive, 'do'	 to do	 1,000
+vdn	 past participle, 'do'	 done	 700
+vdp	 plural present, 'do'	 As freendes doon whan they been met	 30
+vdz	 3rd singular present, 'do'	 does	 800
+vdzx	 3rd singular present negative, 'do'	 doesn't	 20
+vh2	 2nd singular present of 'have'	 thou hast	 250
+vh2-imp	 2nd plural present imperative, 'have'	 O haveth of my deth pitee!	 1
+vh2x	 2nd singular present negative, 'have'	 hastna	 0
+vhb	 present tense, 'have'	 have	 2,500
+vhbx	 present tense negative, 'have'	 haven't	 30
+vhd	 past tense, 'have'	 had	 6,000
+vhd2	 2nd singular past of 'have'	 thou hadst	 35
+vhdp	 plural past tense, 'have'	 Of folkes that hadden grete fames	 10
+vhdx	 past tense negative, 'have'	 hadn't	 20
+vhg	 present participle, 'have'	 having	 730
+vhi	 infinitive, 'have'	 to have	 2,400
+vhn	 past participle, 'have'	 had	 220
+vhp	 plural present, 'have'	 They han of us no jurisdiccioun,	 120
+vhz	 3rd singular present, 'have'	 has, hath	 1,700
+vhzx	 3rd singular present negative, 'have'	 Ther loveth noon, that she nath why to pleyne.	 11
+vm2	 2nd singular present of modal verb	 wilt thou	 360
+vm2x	 2nd singular present negative, modal verg	 O deth, allas, why nyltow do me deye	 4
+vmb	 present tense, modal verb	 can, may, shall, will	 8,300
+vmb1	 1st singular present, modal verb	 Chill not let go, zir, without vurther 'cagion	 3
+vmbx	 present tense negative, modal verb	 cannot; won't; I nyl nat lye	 700
+vmd	 past tense, modal verb	 could, might, should, would	 8,300
+vmd2	 2nd singular past of modal verb	 couldst, shouldst, wouldst; how gret scorn woldestow han	 120
+vmd2x	 2nd singular present, modal verb	 Why noldest thow han writen of Alceste	 5
+vmdp	 plural past tense, modal verb	 tho thinges ne scholden nat han ben doon	 30
+vmdx	 past negative, modal verb	 couldn't; She nolde do that vileynye or synne	 160
+vmi	 infinitive, modal verb	 Criseyde shal nought konne knowen me.	 5
+vmn	 past participle, modal verb	 I had oones or twyes ycould	 2
+vmp	 plural present tense, modal verg	 and how ye schullen usen hem	 25
+vv2	 2nd singular present of verb	 thou knowest	 480
+vv2-imp	 2nd present imperative, verb	 For, sire and dame, trusteth me right weel,	 80
+vv2x	 2nd singular present negative, verb	 "Yee!" seyde he, "thow nost what thow menest;	 1
+vvb	 present tense, verg	 they live	 17,000
+vvbx	 present tense negative, verb	 What shall I don? For certes, I not how	 30
+vvd	 past tense, verb	 knew	 33,000
+vvd2	 2nd singular past of verb	 knewest	 75
+vvd2x	 2nd singular past negative, verb	 thou seidest that thou nystist nat	 0
+vvdp	 past plural, verb	 They neuer strouen to be chiefe	 80
+vvdx	 past tense negative, verb	 she caredna to gang into the stable	 10
+vvg	 present participle, verb	 knowing	 13,700
+vvi	 infinitive, verb	 to know	 36,000
+vvn	 past participle, verb	 known	 26,200
+vvp	 plural present, verb	 Those faytours little regarden their charge	 330
+vvz	 3rd singular preseent, verb	 knows	 7,200
+vvzx	 3rd singular present negative, verb	 She caresna for Seth.	 1
+xx	 negative	 not	 7,800
+zz	 unknown or unparsable token	 n/a	 200

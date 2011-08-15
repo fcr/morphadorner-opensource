@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+<!-- morphadorner.xml directory file for GATE builtins -->
+<CREOLE-DIRECTORY>
+    <CREOLE>
+        <RESOURCE>
+
+            <NAME>MorphAdorner Part of Speech Tagger</NAME>
+            <JAR>morphadorner.jar</JAR>
+            <CLASS>edu.northwestern.at.morphadorner.gate.PosTaggerGateWrapper</CLASS>
+            <COMMENT>MorphAdorner Part of Speech Tagger</COMMENT>
+
+            <PARAMETER NAME="document"
+                       RUNTIME="true"
+                       COMMENT="The document to be processed">
+                gate.Document
+            </PARAMETER>
+
+            <PARAMETER NAME="inputASName"
+                       RUNTIME="true"
+                       OPTIONAL="true"
+                       COMMENT="Name of annotation set for input">
+                java.lang.String
+            </PARAMETER>
+
+            <PARAMETER NAME="outputASName"
+                       RUNTIME="true"
+                       DEFAULT=""
+                       OPTIONAL="true"
+                       COMMENT="Name of annotation set for output">
+                java.lang.String
+            </PARAMETER>
+
+            <PARAMETER NAME="baseTokenAnnotationType"
+                       RUNTIME="true"
+                       DEFAULT="Token"
+                       OPTIONAL="false"
+                       COMMENT="Annotation type for word tokens">
+                java.lang.String
+            </PARAMETER>
+
+            <PARAMETER NAME="baseSentenceAnnotationType"
+                       RUNTIME="true"
+                       DEFAULT="Sentence"
+                       OPTIONAL="false"
+                       COMMENT="Annotation type for sentences">
+                java.lang.String
+            </PARAMETER>
+
+            <PARAMETER NAME="encoding"
+                       RUNTIME="true"
+                       DEFAULT="utf-8"
+                       COMMENT="Character encoding for temporary files">
+                java.lang.String
+            </PARAMETER>
+
+        </RESOURCE>
+
+        <RESOURCE>
+
+            <NAME>MorphAdorner Tokenizer and Sentence Splitter</NAME>
+            <JAR>morphadorner.jar</JAR>
+            <CLASS>edu.northwestern.at.morphadorner.gate.TokenizerGateWrapper</CLASS>
+            <COMMENT>MorphAdorner Tokenizer and Sentence Splitter</COMMENT>
+
+            <PARAMETER NAME="document"
+                       RUNTIME="true"
+                       COMMENT="The document to be processed">
+                gate.Document
+            </PARAMETER>
+
+            <PARAMETER NAME="inputASName"
+                       RUNTIME="true"
+                       OPTIONAL="true"
+                       COMMENT="Name of annotation set for input">
+                java.lang.String
+            </PARAMETER>
+
+            <PARAMETER NAME="outputASName"
+                       RUNTIME="true"
+                       DEFAULT=""
+                       OPTIONAL="true"
+                       COMMENT="Name of annotation set for output">
+                java.lang.String
+            </PARAMETER>
+
+            <PARAMETER NAME="baseTokenAnnotationType"
+                       RUNTIME="true"
+                       DEFAULT="Token"
+                       OPTIONAL="false"
+                       COMMENT="Annotation type for word tokens">
+                java.lang.String
+            </PARAMETER>
+
+            <PARAMETER NAME="baseSentenceAnnotationType"
+                       RUNTIME="true"
+                       DEFAULT="Sentence"
+                       OPTIONAL="false"
+                       COMMENT="Annotation type for sentences">
+                java.lang.String
+            </PARAMETER>
+
+            <PARAMETER NAME="encoding"
+                       RUNTIME="true"
+                       DEFAULT="utf-8"
+                       COMMENT="Character encoding for temporary files">
+                java.lang.String
+            </PARAMETER>
+
+        </RESOURCE>
+
+    </CREOLE>
+</CREOLE-DIRECTORY>
+

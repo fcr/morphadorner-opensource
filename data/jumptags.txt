@@ -1,0 +1,9 @@
+bibl
+figdesc
+figDesc
+figure
+footnote
+note
+ref
+stage
+tailnote

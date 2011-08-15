@@ -1,0 +1,33 @@
+/*
+*  litwork.jape
+*/
+
+
+Phase:	litwork
+Input: Token Lookup SpaceToken
+Options: control = appelt debug = false
+
+///////////////////////////////////////////////////////////////
+
+// Literary Work Rules
+
+/////////////////////////////////////////////////////////////////
+
+Rule:	GazLitwork
+Priority: 500
+(
+ {Lookup.majorType == litworks}
+)
+:litwork -->
+{
+System.out.println( "GazLitwork fired" );
+gate.AnnotationSet litwork = (gate.AnnotationSet)bindings.get("litwork");
+gate.Annotation litworkAnn = (gate.Annotation)litwork.iterator().next();
+System.out.println( "   litworkAnn=" + litworkAnn );
+gate.FeatureMap features = Factory.newFeatureMap();
+features.put("kind", "litwork");
+features.put("rule", "GazLitwork");
+annotations.add(litwork.firstNode(), litwork.lastNode(), "TempLitwork",
+features);
+}
+

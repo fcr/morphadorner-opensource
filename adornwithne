@@ -1,0 +1,8 @@
+#!/bin/sh
+java -Xmx720m -Xss1m -cp .:bin/:gatelib/gate.jar:gatelib/jasper-compiler-jdt.jar:\
+lib/jdom.jar:gatelib/nekohtml-0.9.5.jar:gatelib/ontotext.jar:\
+gatelib/PDFBox-0.7.2.jar:gatelib/serializer.jar:gatelib/xercesImpl.jar:\
+gatelib/stax-api-1.0.1.jar:lib/icu4j-charsets_3_6_1.jar:lib/icu4j_3_6_1.jar \
+	edu.northwestern.at.morphadorner.tools.namedentities.AdornWithNamedEntities \
+	$1 $2 $3 $4 $5 $6 $7 $8 $9
+

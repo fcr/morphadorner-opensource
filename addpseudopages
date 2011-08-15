@@ -1,0 +1,3 @@
+#!/bin/sh
+java -Xmx720m -Xss1m -cp .:bin/ \
+	edu.northwestern.at.morphadorner.tools.addpseudopages.AddPseudoPages $1 $2 $3 $4

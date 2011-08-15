@@ -1,0 +1,5 @@
+#!/bin/sh
+java -Xmx720m -Xss1m -cp .:bin/ \
+	edu.northwestern.at.morphadorner.tools.mergeenhancedbrilllexicon.MergeEnhancedBrillLexicon \
+	$1 $2 $3
+

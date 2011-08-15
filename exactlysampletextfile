@@ -1,0 +1,3 @@
+#!/bin/sh
+java -Xmx512m -Xss1m -cp .:bin/ \
+	edu.northwestern.at.morphadorner.tools.sampletextfile.ExactlySampleTextFile $1 $2 $3

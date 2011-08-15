@@ -1,0 +1,3 @@
+#!/bin/sh
+java -Xmx720m -Xss1m -cp .:bin/ \
+	edu.northwestern.at.morphadorner.tools.tagdiff.TagDiff $1 $2 $3 $4

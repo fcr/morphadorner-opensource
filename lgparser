@@ -1,0 +1,3 @@
+#!/bin/sh
+java -cp .:bin/ edu.northwestern.at.morphadorner.tools.lgparser.LGParser \
+	data/lgparser "$1"

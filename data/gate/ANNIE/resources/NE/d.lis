@@ -1,0 +1,44 @@
+
+File Differences
+
+Old File: nameold.jape
+New File: name.jape
+(C)opy and (D)elete line numbers refer to old file
+(I)nsert line numbers refer to new file
+
+
+ BEGIN
+ C:1-127
+   I  128:Rule:	GazSurname
+   I  129:Priority: 10
+   I  130:(
+   I  131:  {Lookup.majorType == surname}
+   I  132:)
+   I  133::person -->
+   I  134:{
+   I  135:  Set annots = inputAS.get( "Token" );
+   I  136:  if ( annots != null )
+   I  137:  {
+   I  138:    Annotation annot		= (gate.Annotation)annots.iterator().next();
+   I  139:    FeatureMap featureMap	= annot.getFeatures();
+   I  140:    String category		= (String)featureMap.get( "category" );
+   I  141:    String tokenString		= (String)featureMap.get( "string" );
+   I  142:    String orth			= (String)featureMap.get( "orth" );
+   I  143:
+   I  144:    if ( category.equals( "NNP" ) &&
+   I  145:         ( orth.equals( "uppercase" ) || orth.equals( "upperInitial" ) )
+   I  146:       )
+   I  147:    {
+   I  148:      gate.AnnotationSet person = (gate.AnnotationSet)bindings.get("person");
+   I  149:      gate.Annotation personAnn = (gate.Annotation)person.iterator().next();
+   I  150:      gate.FeatureMap features = Factory.newFeatureMap();
+   I  151:      features.put("kind", "personName");
+   I  152:      features.put("rule", "GazSurname");
+   I  153:      annotations.add(person.firstNode(), person.lastNode(), "TempPerson",
+   I  154:         features);
+   I  155:    }
+   I  156:  }
+   I  157:}
+   I  158:
+ C:128-1320
+ END

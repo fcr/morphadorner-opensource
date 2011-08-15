@@ -1,0 +1,8 @@
+#!/bin/sh
+java -Xmx720m -Xss1m -cp .:bin/:lib/log4j-1.2.9.jar:lib/jdom.jar:\
+lib/icu4j-charsets_3_6_1.jar:lib/icu4j_3_6_1.jar:\
+lib\isorelax.jar:lib\isorelax-jaxp-bridge-1.0.jar:\
+lib\msv.jar:lib\relaxngDatatype.jar:lib\xsdlib.jar \
+	edu.northwestern.at.morphadorner.tools.relemmatize.Relemmatize \
+	$1 $2 $3 $4 $5 $6 $7 $8 $9
+

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.2//EN"
+    "http://java.sun.com/j2ee/dtds/web-app_2.2.dtd">
+
+<web-app>
+  <servlet>
+    <servlet-name>SpellingStandardizerServlet</servlet-name>
+    <servlet-class>edu.northwestern.at.morphadorner.servlets.SpellingStandardizerServlet</servlet-class>
+    <load-on-startup>-1</load-on-startup>
+    <init-param>
+       <param-name>datadirectory</param-name>
+       <param-value>/nupos</param-value>
+    </init-param>
+  </servlet>
+
+  <servlet>
+    <servlet-name>LemmatizerServlet</servlet-name>
+    <servlet-class>edu.northwestern.at.morphadorner.servlets.LemmatizerServlet</servlet-class>
+    <load-on-startup>-1</load-on-startup>
+    <init-param>
+       <param-name>datadirectory</param-name>
+       <param-value>/nupos</param-value>
+    </init-param>
+  </servlet>
+
+  <servlet>
+    <servlet-name>LexiconLookupServlet</servlet-name>
+    <servlet-class>edu.northwestern.at.morphadorner.servlets.LexiconLookupServlet</servlet-class>
+    <load-on-startup>-1</load-on-startup>
+    <init-param>
+       <param-name>datadirectory</param-name>
+       <param-value>/nupos</param-value>
+    </init-param>
+  </servlet>
+
+  <servlet>
+    <servlet-name>SentenceSplitterServlet</servlet-name>
+    <servlet-class>edu.northwestern.at.morphadorner.servlets.SentenceSplitterServlet</servlet-class>
+    <load-on-startup>-1</load-on-startup>
+    <init-param>
+       <param-name>datadirectory</param-name>
+       <param-value>/nupos</param-value>
+    </init-param>
+  </servlet>
+
+  <servlet>
+    <servlet-name>TextSegmenterServlet</servlet-name>
+    <servlet-class>edu.northwestern.at.morphadorner.servlets.TextSegmenterServlet</servlet-class>
+    <load-on-startup>-1</load-on-startup>
+    <init-param>
+       <param-name>datadirectory</param-name>
+       <param-value>/nupos</param-value>
+    </init-param>
+  </servlet>
+
+  <servlet>
+    <servlet-name>WordTokenizerServlet</servlet-name>
+    <servlet-class>edu.northwestern.at.morphadorner.servlets.WordTokenizerServlet</servlet-class>
+    <load-on-startup>-1</load-on-startup>
+    <init-param>
+       <param-name>datadirectory</param-name>
+       <param-value>/nupos</param-value>
+    </init-param>
+  </servlet>
+
+  <servlet>
+    <servlet-name>PartOfSpeechTaggerServlet</servlet-name>
+    <servlet-class>edu.northwestern.at.morphadorner.servlets.PartOfSpeechTaggerServlet</servlet-class>
+    <load-on-startup>-1</load-on-startup>
+    <init-param>
+       <param-name>datadirectory</param-name>
+       <param-value>/nupos</param-value>
+    </init-param>
+  </servlet>
+
+  <servlet>
+    <servlet-name>LanguageRecognizerServlet</servlet-name>
+    <servlet-class>edu.northwestern.at.morphadorner.servlets.LanguageRecognizerServlet</servlet-class>
+    <load-on-startup>-1</load-on-startup>
+    <init-param>
+       <param-name>datadirectory</param-name>
+       <param-value>/nupos</param-value>
+    </init-param>
+  </servlet>
+
+  <servlet>
+    <servlet-name>NameRecognizerServlet</servlet-name>
+    <servlet-class>edu.northwestern.at.morphadorner.servlets.NameRecognizerServlet</servlet-class>
+    <load-on-startup>-1</load-on-startup>
+    <init-param>
+       <param-name>datadirectory</param-name>
+       <param-value>/nupos</param-value>
+    </init-param>
+  </servlet>
+
+  <servlet>
+    <servlet-name>ParserServlet</servlet-name>
+    <servlet-class>edu.northwestern.at.morphadorner.servlets.ParserServlet</servlet-class>
+    <load-on-startup>-1</load-on-startup>
+    <init-param>
+       <param-name>datadirectory</param-name>
+       <param-value>/nupos</param-value>
+    </init-param>
+  </servlet>
+
+  <servlet>
+    <servlet-name>PluralizerServlet</servlet-name>
+    <servlet-class>edu.northwestern.at.morphadorner.servlets.PluralizerServlet</servlet-class>
+    <load-on-startup>-1</load-on-startup>
+    <init-param>
+       <param-name>datadirectory</param-name>
+       <param-value>/nupos</param-value>
+    </init-param>
+  </servlet>
+
+  <servlet>
+    <servlet-name>VerbConjugatorServlet</servlet-name>
+    <servlet-class>edu.northwestern.at.morphadorner.servlets.VerbConjugatorServlet</servlet-class>
+    <load-on-startup>-1</load-on-startup>
+    <init-param>
+       <param-name>datadirectory</param-name>
+       <param-value>/nupos</param-value>
+    </init-param>
+  </servlet>
+
+  <servlet-mapping>
+     <servlet-name>SpellingStandardizerServlet</servlet-name>
+     <url-pattern>/spellingstandardizer/example/SpellingStandardizer</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+     <servlet-name>LemmatizerServlet</servlet-name>
+     <url-pattern>/lemmatizer/example/Lemmatizer</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+     <servlet-name>LexiconLookupServlet</servlet-name>
+     <url-pattern>/lexiconlookup/example/LexiconLookup</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+     <servlet-name>SentenceSplitterServlet</servlet-name>
+     <url-pattern>/sentencesplitter/example/SentenceSplitter</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+     <servlet-name>TextSegmenterServlet</servlet-name>
+     <url-pattern>/textsegmenter/example/TextSegmenter</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+     <servlet-name>WordTokenizerServlet</servlet-name>
+     <url-pattern>/wordtokenizer/example/WordTokenizer</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+     <servlet-name>PartOfSpeechTaggerServlet</servlet-name>
+     <url-pattern>/postagger/example/PartOfSpeechTagger</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+     <servlet-name>LanguageRecognizerServlet</servlet-name>
+     <url-pattern>/languagerecognizer/example/LanguageRecognizer</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+     <servlet-name>NameRecognizerServlet</servlet-name>
+     <url-pattern>/namerecognizer/example/NameRecognizer</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+     <servlet-name>ParserServlet</servlet-name>
+     <url-pattern>/parser/example/Parser</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+     <servlet-name>PluralizerServlet</servlet-name>
+     <url-pattern>/pluralizer/example/Pluralizer</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+     <servlet-name>VerbConjugatorServlet</servlet-name>
+     <url-pattern>/conjugator/example/VerbConjugator</url-pattern>
+  </servlet-mapping>
+
+</web-app>
+
