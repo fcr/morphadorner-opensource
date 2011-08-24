@@ -45,10 +45,10 @@ abstract public class AbstractWordTokenizer
 
 	/**	Pattern for 2 or more hyphens. */
 
-	protected final static Pattern hyphensPattern	=
+	protected final Pattern hyphensPattern	=
 		Pattern.compile(  "^([-\u2011]{2,})$" );
 
-	protected final static Matcher hyphensMatcher	=
+	protected final Matcher hyphensMatcher	=
 		hyphensPattern.matcher( "" );
 
 	/**	Create a word tokenizer.

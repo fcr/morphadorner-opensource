@@ -146,7 +146,7 @@
 
 	<target name="jar" depends="bin">
 		<mkdir dir="lib"/>
-		<jar jarfile="lib/morphadorner-1.0-springsense-patch.jar" basedir="bin"
+		<jar jarfile="lib/morphadorner-1.0.1-springsense-patch.jar" basedir="bin"
 		/>
 	</target>
 
